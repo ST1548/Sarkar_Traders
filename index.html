@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarkar Traders | Stock Market Education & Trading</title>
+  <meta name="description" content="Sarkar Traders provides professional stock market training, option strategies, and live trading mentorship in India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">Sarkar<span>Traders</span></a>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-outline">Free Demo</a>
+      <a href="#courses" class="btn btn-primary">Join Now</a>
+    </div>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="fade-left">
+      <span class="badge">India's Trusted Trading Institute</span>
+      <h1>Master the <span>Stock Market</span> with Confidence</h1>
+      <p>Professional training in equity, options, expiry strategies, and live market mentorship.</p>
+      <div class="hero-actions">
+        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+        <a href="#contact" class="btn btn-outline">Book Free Demo</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>8,000+</strong><span>Students</span></div>
+        <div class="stat"><strong>7+</strong><span>Years</span></div>
+        <div class="stat"><strong>4.8★</strong><span>Rating</span></div>
+      </div>
+    </div>
+    <div class="hero-card fade-right">
+      <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=900&auto=format&fit=crop">
+      <h4>Live Trading Mentorship</h4>
+      <p>Learn real-world trading with live market sessions.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge">Why Choose Us</span>
+      <h2>Everything You Need to Become a Consistent Trader</h2>
+      <p>Structured learning and mentorship designed for Indian markets.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-up"><div class="feature-icon">📈</div><h4>Proven Strategies</h4><p>Price action, options & expiry setups.</p></div>
+      <div class="feature-card fade-up"><div class="feature-icon">🎯</div><h4>Live Market Practice</h4><p>Trade alongside mentors.</p></div>
+      <div class="feature-card fade-up"><div class="feature-icon">🧑‍🏫</div><h4>Expert Mentorship</h4><p>Personal guidance.</p></div>
+      <div class="feature-card fade-up"><div class="feature-icon">📚</div><h4>Beginner to Pro</h4><p>Structured curriculum.</p></div>
+      <div class="feature-card fade-up"><div class="feature-icon">🕒</div><h4>Lifetime Access</h4><p>Recorded sessions.</p></div>
+      <div class="feature-card fade-up"><div class="feature-icon">🤝</div><h4>Community Support</h4><p>Private trader groups.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="courses">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge">Programs</span>
+      <h2>Popular Trading Courses</h2>
+      <p>Choose a path that fits your trading goals.</p>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card fade-up">
+        <div class="course-img">Beginner</div>
+        <div class="course-body">
+          <h4>Stock Market Foundation</h4>
+          <p>Candlesticks, charts, trends, basics.</p>
+          <div class="course-meta">
+            <span class="price">₹4,999</span>
+            <button class="btn btn-primary" onclick="startPayment('Stock Market Foundation', 4999)">Pay Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="course-card fade-up">
+        <div class="course-img">Options</div>
+        <div class="course-body">
+          <h4>Options Trading Mastery</h4>
+          <p>Greeks, spreads & expiry strategies.</p>
+          <div class="course-meta">
+            <span class="price">₹7,999</span>
+            <button class="btn btn-primary" onclick="startPayment('Options Trading Mastery', 7999)">Pay Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="course-card fade-up">
+        <div class="course-img">Pro</div>
+        <div class="course-body">
+          <h4>Pro Trader Mentorship</h4>
+          <p>Advanced strategies with live trading.</p>
+          <div class="course-meta">
+            <span class="price">₹12,999</span>
+            <button class="btn btn-primary" onclick="startPayment('Pro Trader Mentorship', 12999)">Pay Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-img fade-left">Sarkar Traders</div>
+    <div class="about-content fade-right">
+      <span class="badge">About Us</span>
+      <h3>Helping Traders Build Confidence Since 2017</h3>
+      <p>Professional stock market education focused on discipline and consistency.</p>
+      <ul class="about-list">
+        <li><span>✔</span> SEBI-compliant approach</li>
+        <li><span>✔</span> Live market case studies</li>
+        <li><span>✔</span> Simple Hindi & English</li>
+        <li><span>✔</span> Lifetime support</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Talk to Advisor</a>
+    </div>
+  </div>
+</section>
+
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge">Reviews</span>
+      <h2>What Our Students Say</h2>
+      <p>Thousands trust Sarkar Traders.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <p>"Best trading institute I’ve joined. Very practical learning."</p>
+        <div class="testimonial-user"><div class="avatar">A</div><div><strong>Ankit Sharma</strong><br><span>Options Trader</span></div></div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <p>"Expiry day strategies changed my trading completely."</p>
+        <div class="testimonial-user"><div class="avatar">P</div><div><strong>Priya Das</strong><br><span>Intraday Trader</span></div></div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <p>"Live mentorship gave me real confidence."</p>
+        <div class="testimonial-user"><div class="avatar">R</div><div><strong>Rahul Verma</strong><br><span>Equity Trader</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-grid">
+    <div class="fade-left">
+      <h3>Start Your Trading Journey Today</h3>
+      <p>Join our next batch and learn stock market trading.</p>
+      <a href="#contact" class="btn btn-primary">Book Free Demo</a>
+    </div>
+    <div class="cta-card fade-right">
+      <ul>
+        <li><span>✔</span> Beginner-friendly</li>
+        <li><span>✔</span> Live sessions</li>
+        <li><span>✔</span> Lifetime support</li>
+        <li><span>✔</span> Practical strategies</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="badge">Contact</span>
+      <h2>Book a Free Demo Session</h2>
+      <p>Fill the form and our team will contact you shortly.</p>
+    </div>
+    <div class="contact-wrapper fade-up">
+      <form id="contactForm">
+        <div style="display:grid;gap:16px">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Mobile Number" required>
+          <select name="course">
+            <option value="">Interested Course</option>
+            <option>Beginner Course</option>
+            <option>Options Trading</option>
+            <option>Pro Mentorship</option>
+          </select>
+          <textarea rows="4" name="message" placeholder="Message (optional)"></textarea>
+          <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+          <p id="formStatus" style="font-size:13px;color:#16a34a;display:none">Thank you! We'll contact you shortly.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Sarkar<span style="color:#60a5fa">Traders</span></div>
+        <p>Professional stock market training and mentorship.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Courses</h5>
+        <ul>
+          <li><a href="#courses">Beginner Trading</a></li>
+          <li><a href="#courses">Options Trading</a></li>
+          <li><a href="#courses">Pro Mentorship</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>Email: support@sarkartraders.co.in</li>
+          <li>Phone: +91 7001743653</li>
+          <li>Location: India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Sarkar Traders. All rights reserved.</span>
+      <div class="socials">
+        <a href="#">f</a><a href="#">i</a><a href="#">y</a><a href="#">t</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917001743653?text=Hello%20Sarkar%20Traders,%20I%20want%20to%20know%20about%20your%20courses."
+   target="_blank"
+   class="whatsapp-float">💬</a>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

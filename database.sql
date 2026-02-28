@@ -1,0 +1,18 @@
+
+CREATE TABLE leads (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  phone VARCHAR(20),
+  course VARCHAR(100),
+  message TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE payments (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  payment_id VARCHAR(100),
+  course VARCHAR(100),
+  amount INT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
